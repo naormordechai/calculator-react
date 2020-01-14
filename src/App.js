@@ -98,7 +98,7 @@ function App() {
   };
 
   const onDeleteHistory = (id) => {
-    dispatch({ type: 'DELETE', id })
+    dispatch({ type: 'DELETE', id }) 
   };
 
   return (
