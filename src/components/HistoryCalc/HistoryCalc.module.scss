@@ -1,0 +1,29 @@
+.listHistory {
+    border: 1px solid rgba(0,0,0,.14);
+    .rowHistory {
+        min-height: 40px;
+        padding: 0 5px;;
+        display: flex;
+        cursor: pointer;
+        justify-content: space-between;
+        align-items: center;
+        transition: .2s;
+        &:hover {
+            background: rgba(0,0,0,.02);
+        }
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba(0,0,0,.14);;
+        }
+        button {
+            border: 0;
+            outline: none;
+            background: inherit;
+            opacity: .54;
+            transition: .2s;
+            cursor: pointer;
+            &:hover {
+                opacity: .26;
+            }
+        }
+    }
+}

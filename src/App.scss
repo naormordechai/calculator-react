@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+/* HELPERS */
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+
+
+/* CALCULATOR */ 
+
+.calc-wrapper {
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  background-image: linear-gradient(#eee, #fff);
+  width: 100%;
+    .inner-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+        .title-section {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .title {
+            opacity: .14;
+            margin-bottom: 8px;
+            & + span {
+              font-size: 12px;;
+              opacity: .54;
+            }
+          }
+          .btn-history {
+            background: inherit;
+            position: absolute;
+            right: 40px;
+            top: 42px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: .2s;;
+            &:hover {
+              opacity: .54;
+            };
+            &:active {
+              transform: scale(.9);
+            }
+          }
+        }
+    }
+};

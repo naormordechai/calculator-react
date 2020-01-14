@@ -1,0 +1,22 @@
+.btnNumber {
+        height: 50px;
+        background-color: #ccc;;
+        border: 1px solid #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+        font-weight: 700;
+        &:active {
+            transform: scale(.9);
+            opacity: .7;
+        }
+}
+
+.normalWidth {
+    width: 50px;;
+}
+
+.clearBtnWidth {
+    width: 150px;;
+}
